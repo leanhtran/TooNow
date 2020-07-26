@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TooNow Job\'R</string>
+    <string name="channel_id">voximplant_channel_id</string>
+    <string name="facebook_app_id">224863198896412</string>
+    <string name="fb_login_protocol_scheme">fb224863198896412</string>
+</resources>

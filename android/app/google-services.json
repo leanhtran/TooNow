@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "1036566765976",
+    "firebase_url": "https://civil-density-259414.firebaseio.com",
+    "project_id": "civil-density-259414",
+    "storage_bucket": "civil-density-259414.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036566765976:android:4aafe7c78334ceabe98bed",
+        "android_client_info": {
+          "package_name": "com.toonowjobr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036566765976-jk02827jcdpcpcmmeen2bvg8nau8dds7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCrGZXXsyMYRY2Ewmznl0zVMHtpkRWkEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036566765976-jk02827jcdpcpcmmeen2bvg8nau8dds7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1036566765976-buefr09384qkgdssclc2t7peq0tcn0he.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.digital.unicorn.toonowjobr"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036566765976:android:1390a4e8c4bee534e98bed",
+        "android_client_info": {
+          "package_name": "com.toonowjobr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036566765976-0h6a5kpr584s45jknlf07mlh4mruphne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCrGZXXsyMYRY2Ewmznl0zVMHtpkRWkEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036566765976-jk02827jcdpcpcmmeen2bvg8nau8dds7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1036566765976-qcpekp8jvcqd7u7l44f0qh44pi2rhq0s.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.digital.unicorn.toonowjobr"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

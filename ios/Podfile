@@ -1,0 +1,78 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Cashew' do
+  rn_path = '../node_modules/react-native'
+  rn_maps_path = '../node_modules/react-native-maps'
+  permissions_path = '../node_modules/react-native-permissions/ios'
+
+  # Comment the next line if you don't want to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Cashew
+  pod 'react-native-webview', :path => '../node_modules/react-native-webview'
+
+  post_install do |installer|
+  react_project = Xcodeproj::Project.open("../node_modules/react-native/React/React.xcodeproj")
+    react_project.main_group["React/Views"].files.each do |file|   
+      if file.path.match(/^RCTWebView/) 
+        file.remove_from_project
+      end   
+    end   
+react_project.save
+  end
+
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+       'Core',
+       'CxxBridge',
+       'RCTImage',
+       'RCTNetwork',
+       'RCTText',
+       'RCTWebSocket',
+       'DevSupport',
+       'RCTAnimation',
+       'RCTLinkingIOS',
+       'RCTGeolocation'
+       # Add any other subspecs you want to use in your project
+       ]
+  pod 'react-native-voximplant', path: '../node_modules/react-native-voximplant'
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Database'
+
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/GLog.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+
+  pod 'RNCallKeep', :path => '../node_modules/react-native-callkeep'
+
+  pod 'RNVoipPushNotification', :path => '../node_modules/react-native-voip-push-notification'
+
+  # react-native-maps dependencies
+  pod 'react-native-maps', path: rn_maps_path
+  pod 'react-native-google-maps', path: rn_maps_path  # Uncomment this line if you want to support GoogleMaps on iOS
+  pod 'GoogleMaps'  # Uncomment this line if you want to support GoogleMaps on iOS
+  pod 'Google-Maps-iOS-Utils' # Uncomment this line if you want to support GoogleMaps on iOS
+
+  pod 'GoogleSignIn', '~> 5.0.2'
+  
+  pod 'RNGoogleSignin', :path => '../node_modules/react-native-google-signin'
+
+  pod 'react-native-fbsdk', :path => '../node_modules/react-native-fbsdk'
+
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+
+  pod '@mauron85_react-native-background-geolocation', :path => '../node_modules/@mauron85/react-native-background-geolocation'
+
+  pod 'RNDateTimePicker', :path => '../node_modules/@react-native-community/datetimepicker'
+
+  pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
+
+  pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"
+
+end
