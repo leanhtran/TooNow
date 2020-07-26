@@ -34,7 +34,7 @@
     "format-json": "^1.0.3",
     "identity-obj-proxy": "^3.0.0",
     "jetifier": "^1.6.5",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "prettier": "^1.19.1",
     "prop-types": "^15.6.1",
     "querystringify": "2.1.0",
